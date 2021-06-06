@@ -6,11 +6,6 @@ const expect = chai.expect;
 
 
 describe("Testing GitCommand.status()", function(){
-<<<<<<< HEAD
-    //change to git
-=======
-
->>>>>>> fc0870894aea06976ecba8300dd1c65248fd0eba
     it('Should return information if has changes in directory', function(){
         let wd = new WorkingDirectory();
         wd.addFile("index.html", "views", "<html>Hello</html>");
@@ -31,7 +26,6 @@ describe("Testing GitCommand.status()", function(){
     });
 })
 
-<<<<<<< HEAD
 describe("test", function() {
     it("function should just return true", function(){
         let git = new GitCommand(wd);
@@ -41,8 +35,7 @@ describe("test", function() {
     })
 });
 
-=======
->>>>>>> fc0870894aea06976ecba8300dd1c65248fd0eba
+
 // describe("Testing GitCommand.add()", function(){
 
 //     it('Should success with exact path_file "views/index.html"', function(){
