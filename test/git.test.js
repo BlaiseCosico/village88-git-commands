@@ -28,10 +28,11 @@ describe("Testing GitCommand.status()", function(){
 
 describe("test", function() {
     it("function should just return true", function(){
+        let wd = new WorkingDirectory();
         let git = new GitCommand(wd);
         let output = git.test();
 
-        expect(output).to.equal('true');
+        expect(output).to.equal(true);
     })
 });
 
