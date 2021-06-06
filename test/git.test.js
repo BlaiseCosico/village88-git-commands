@@ -27,6 +27,15 @@ describe("Testing GitCommand.status()", function(){
     });
 })
 
+describe("test", function() {
+    it("function should just return true", function(){
+        let git = new GitCommand(wd);
+        let output = git.test();
+
+        expect(output).to.equal('true');
+    })
+});
+
 // describe("Testing GitCommand.add()", function(){
 
 //     it('Should success with exact path_file "views/index.html"', function(){

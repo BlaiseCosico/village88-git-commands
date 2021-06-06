@@ -33,6 +33,10 @@ class GitCommand {
         
     }
 
+    test(){
+        return true;
+    }
+
     //Command: git add <filename/file directory/wildcard> 
     add(path_file){
         let modified_files = this.working_directory.new_changes;
