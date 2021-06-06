@@ -15,6 +15,22 @@ class GitCommand {
             For assignment #1:
             Create logic here and run unit testing.
         */
+
+        let count = Object.keys(this.working_directory.new_changes).length;
+        console.log("count is : " +count);
+
+        if(count){
+            let files = [];
+            for (const [key, value] of Object.entries(this.working_directory.new_changes)) {
+                console.log(`${key}: ${value}`);
+                files.push(key);
+              }
+            console.log("files are " + files.join('\n'));
+            return 'You have '+ count + ' change/s.\n'+files.join('\n');
+        }
+        
+        return 'You have 0 change/s.\n';
+        
     }
 
     //Command: git add <filename/file directory/wildcard> 
